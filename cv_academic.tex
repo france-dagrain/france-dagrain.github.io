@@ -1,0 +1,104 @@
+\documentclass[11pt]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[margin=1in]{geometry}
+\usepackage{tabularx}
+\usepackage{titlesec}
+\usepackage[hidelinks]{hyperref}
+
+% ---------- Section formatting: small caps + full-width rule ----------
+\titleformat{\section}
+  {\normalsize\scshape}{}{0pt}{}[{\vspace{-6pt}\rule{\textwidth}{0.4pt}}]
+\titlespacing*{\section}{0pt}{14pt}{6pt}
+
+\setlength{\parindent}{0pt}
+\pagestyle{empty}
+
+% ---------- Row with a left date column and a wrapping content column ----------
+\newcommand{\cvrow}[2]{%
+  \begin{tabularx}{\textwidth}{@{}p{2.3cm}@{\hspace{0.35cm}}X@{}}
+    #1 & #2
+  \end{tabularx}\par\vspace{5pt}%
+}
+
+\begin{document}
+
+% ===================== Header =====================
+\begin{minipage}[t]{0.60\textwidth}
+  {\LARGE\bfseries France d'Agrain}\\[8pt]
+  \href{mailto:france.dagrain@minesparis.psl.eu}{france.dagrain@minesparis.psl.eu}\\
+  \href{https://france-dagrain.github.io}{https://france-dagrain.github.io}\\
+  ORCID: \href{https://orcid.org/0009-0000-3653-749X}{0009-0000-3653-749X}
+\end{minipage}%
+\begin{minipage}[t]{0.40\textwidth}
+  \raggedleft
+  \vspace{4pt}
+  CEDP, Mines Paris -- PSL\\
+  60, Boulevard Saint-Michel\\
+  75006 Paris, France
+\end{minipage}
+
+\vspace{6pt}
+
+% ===================== Research Fields =====================
+\section{Research Fields}
+\cvrow{}{Environmental and Resource Economics, Energy Economics.}
+
+% ===================== Education =====================
+\section{Education}
+\cvrow{2023--Present}{\textbf{PhD Candidate in Economics}, CEDP, Mines Paris -- PSL\newline
+  Main advisor: Renaud Coulomb}
+\cvrow{2025}{\textbf{Visiting PhD Scholar}, Grantham Research Institute on Climate Change
+  and the Environment, London School of Economics\newline
+  Host: Franck Venmans}
+\cvrow{2019--2023}{\textbf{Master of Science and Executive Engineering}, Mines Paris -- PSL\newline
+  Specialisation in Energy, Applied Mathematics and Computer Science}
+\cvrow{2016--2019}{\textbf{Bachelor of Arts in Economics}, Sciences Po Paris}
+\cvrow{2016--2019}{\textbf{Undergraduate Degree in Mathematics}, Sorbonne Universit\'e -- Paris VI}
+\cvrow{2018--2019}{\textbf{Academic Exchange}, Nanyang Technological University, Singapore}
+
+% ===================== Working Papers =====================
+\section{Working Papers}
+\textit{``The Welfare Economics of Oil Exploration''}, with Renaud Coulomb and Fanny Henriet.
+AMSE Working Paper No.\ 2025-39, December 2025.
+
+\vspace{5pt}
+
+% ===================== Work in Progress =====================
+\section{Work in Progress}
+\textit{``Leakage and Welfare under the EU Methane Regulation: An Asset-Level Evaluation
+for Crude Oil Imports''}, sole authored.
+
+\vspace{5pt}
+
+% ===================== Conferences & Seminars =====================
+\section{Conferences \& Seminars}
+\cvrow{2026}{7th World Congress of Environmental and Resource Economists (WCERE), Lisbon;
+  Young Energy Economists and Engineers Seminar (YEEES), EUI, Florence;
+  Women in Environmental Economics Workshop, University of Warwick;
+  FAERE PhD Workshop; Paris PhD Seminar in Environmental Economics;
+  Trade and the Environment Seminar, Paris-Saclay.}
+\cvrow{2025}{International Association for Energy Economics (IAEE) Conference, Paris;
+  73rd Congress of the French Economic Association (AFSE), ENS Paris-Saclay;
+  13th Mannheim Conference on Energy and the Environment (MCEE), Mannheim;
+  Manchester Workshop on the Economics of Energy Transition (MWEET), Manchester.}
+
+% ===================== Teaching Experience =====================
+\section{Teaching Experience}
+\cvrow{2023--Present}{\textbf{Teaching Assistant}, Microeconomics I, Mines Paris -- PSL\newline
+  For Prof.\ Pierre Fleckinger}
+\cvrow{2024}{\textbf{Research Advisor}, Research Trimester in Economics, Mines Paris -- PSL}
+
+% ===================== Work Experience =====================
+\section{Work Experience}
+\cvrow{2023}{\textbf{Intern}, Energy Modelling Office, International Energy Agency, Paris, France}
+\cvrow{2022}{\textbf{Intern}, DG Statistics, European Central Bank, Frankfurt, Germany}
+\cvrow{2021}{\textbf{Intern}, Offshore Wind Business Development, TotalEnergies Renewables, Paris, France}
+
+% ===================== Language & Programming =====================
+\section{Language \& Programming}
+\cvrow{}{French (native), English (IELTS 7.5), Spanish (B2--C1).}
+\cvrow{}{Python, PostgreSQL, Matlab, VBA.}
+
+\end{document}
